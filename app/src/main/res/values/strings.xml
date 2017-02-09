@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My FristApp</string>
+
+    <string name="txttile">ป้ายจราจร</string>
 </resources>
