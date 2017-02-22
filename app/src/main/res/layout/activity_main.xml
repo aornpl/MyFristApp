@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/h1"
-        android:id="@+id/txtTitle" />
+        android:id="@+id/txtTitleLiv" />
 
     <Button
         android:text="@string/MoreInfo"
@@ -30,7 +30,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/txtTitle"
+        android:layout_below="@+id/txtTitleLiv"
         android:layout_above="@+id/btnMoreInfo"
         android:id="@+id/livTroffic"
         android:background="#c3ffffff"
