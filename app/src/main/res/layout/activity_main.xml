@@ -4,11 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.comsic.orawon.myfristapp.MainActivity">
+    tools:context="com.comsic.orawon.myfristapp.MainActivity"
+    android:background="@drawable/bg8">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,4 +18,20 @@
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/h1"
         android:id="@+id/txtTitle" />
+
+    <Button
+        android:text="@string/MoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoreInfo"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTitle"
+        android:layout_above="@+id/btnMoreInfo"
+        android:id="@+id/livTroffic"
+        android:background="#c3ffffff"
+        android:layout_margin="@dimen/my_morgin" />
 </RelativeLayout>
