@@ -32,7 +32,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/txtTitleLiv"
         android:layout_above="@+id/btnMoreInfo"
-        android:id="@+id/livTroffic"
+        android:id="@+id/livTraffic"
         android:background="#c3ffffff"
         android:layout_margin="@dimen/my_morgin" />
 </RelativeLayout>
