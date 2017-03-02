@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.traffic_15, R.drawable.traffic_16, R.drawable.traffic_17, R.drawable.traffic_18, R.drawable.traffic_19,
             R.drawable.traffic_20} ;
 
-    private String[] titlestrings, detailStrings;
+    private String[] titlestrings, detailStrings,shortStrings ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,16 @@ public class MainActivity extends AppCompatActivity {
         titlestrings = getResources().getStringArray(R.array.title) ;
         detailStrings = getResources().getStringArray(R.array.detail);
 
+        //substring detailstring arry ตัดข้อความไม่เกิน 30 ตัว
+        shortStrings = new String[detailStrings.length];
+        for (int i=0;i< detailStrings.length; i++) {
+            shortStrings[i] = detailStrings[i].substring(0,29)+ "..."; // แสลงรายละเอียดข้อมูลที่เหลือ...
+
+
+        } //end for , i ตัวสีแดงคือยังไม่ได้ประกาศค่า
+
         //Create Lisreview
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titlestrings, detailStrings) ;
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titlestrings, shortStrings) ;
         listView.setAdapter(myAdapter);
 
     }//main Method onCreate
