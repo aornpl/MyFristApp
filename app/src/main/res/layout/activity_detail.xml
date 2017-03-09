@@ -32,7 +32,7 @@
         android:text="BACK"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="clickBack"
+        android:onClick="clickBack "
         android:id="@+id/btnBack"
         android:layout_alignParentBottom="true" />
 

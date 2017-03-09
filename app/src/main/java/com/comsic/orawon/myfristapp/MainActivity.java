@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Detail",detailStrings[position]);
                 intent.putExtra("Image",ints[position]);
                 startActivity(intent);
-
             } // เมื่อมีการคลิกข้อมูลที่ตำแหน่งใดจะเก็บตำแหน่งข้อมูลจากการคลิก
         });
 

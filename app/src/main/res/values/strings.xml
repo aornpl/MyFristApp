@@ -2,5 +2,6 @@
     <string name="app_name">My FristApp</string>
 
     <string name="txttile">ป้ายจราจร</string>
-    <string name="MoreInfo">ข้อมูลเพิ่มเติม</string>
+    <string name="moreInfo">More Info</string>
+    <string name="aboutMe">About Me</string>
 </resources>
